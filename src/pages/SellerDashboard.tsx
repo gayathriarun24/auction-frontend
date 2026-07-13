@@ -119,6 +119,7 @@ const SellerDashboard: React.FC = () => {
       <div className="flex justify-between items-center mb-12">
         <div>
           <h1 className="text-2xl font-black text-[#616657]">Seller Dashboard</h1>
+          {error && <p className="text-red-500 font-bold">{error}</p>}
           <p className="text-[#909483] text-sm mt-1">Manage your active stock and listings.</p>
         </div>
         <button
