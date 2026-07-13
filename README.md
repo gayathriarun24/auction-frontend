@@ -1,77 +1,37 @@
-# React + TypeScript + Vite
+# Auction Platform - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for the Auction Platform, a comprehensive web solution built to facilitate real-time bidding, user account management, and seller inventory control.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### User Functionalities
+* **Authentication**: Secure registration and profile management.
+* **Item Browsing**: View detailed item descriptions, high-quality images, and seller ratings.
+* **Bidding System**: Seamless interface to place bids on traditional, reverse, and sealed-bid auctions.
+* **Dashboard**: Track personal bidding history logs.
+* **Notifications**: Real-time email alerts (via Brevo API) when outbid.
 
-## React Compiler
+### Seller Functionalities
+* **Product Management**: Full CRUD operations to manage product listings.
+* **Auction Oversight**: Manage auction status and track bidding activity.
+* **Inventory Management**: Tools to list and track unsold items.
+* **Seller Dashboard**: Centralized view for managing all active auctions and categories.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠 Tech Stack
 
-Note: This will impact Vite dev & build performances.
+* **Frontend**: React (MERN stack)
+* **Styling**: TailwindCSS
+* **State Management**: React Context API / Hooks
+* **Email Integration**: Brevo Email API
 
-## Expanding the ESLint configuration
+## 📋 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
+* Node.js (v24.15.0 or higher)
+* npm or yarn
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/gayathriarun24/auction-frontend.git](https://github.com/gayathriarun24/auction-frontend.git)
