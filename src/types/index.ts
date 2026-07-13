@@ -27,3 +27,4 @@ export interface BidLog {
   bidAmount: number;
   bidTime: string;
 }
+

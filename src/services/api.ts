@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // Connected directly to your backend server.js configuration port
-const API_URL = 'http://localhost:3000/api'; 
+// const API_URL = 'http://localhost:3000/api'; 
+const API_URL = 'https://auction-backend-v9mx.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
