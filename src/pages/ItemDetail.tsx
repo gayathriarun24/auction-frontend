@@ -7,6 +7,7 @@ import type { AuctionItem, BidLog } from '../types';
 const ItemDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  console.log(navigate);
   const { user } = useAuth();
 
   const [item, setItem] = useState<AuctionItem | null>(null);
