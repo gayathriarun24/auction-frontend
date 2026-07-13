@@ -30,8 +30,3 @@ This is the frontend application for the Auction Platform, a comprehensive web s
 * Node.js (v24.15.0 or higher)
 * npm or yarn
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/gayathriarun24/auction-frontend.git](https://github.com/gayathriarun24/auction-frontend.git)
