@@ -178,7 +178,7 @@ const SellerDashboard: React.FC = () => {
               <div>
                 <label className="block text-[10px] font-bold text-[#909483] uppercase ml-1 mb-1">Category</label>
                 <select value={category} onChange={(e) => setCategory(e.target.value)} className="w-full bg-[#D1D2D4] rounded-xl p-3 text-[#616657] shadow-[inset_4px_4px_8px_#a8a9ab,inset_-4px_-4px_8px_#fafffd]">
-                  {['Electronics', 'Home decor', 'Automobiles', 'Furnitures', 'Freelance', 'Construction'].map(c => <option key={c}>{c}</option>)}
+                  {['Electronics', 'Home decor', 'Automobiles', 'Furnitures', 'Freelance', 'Construction','Industrial'].map(c => <option key={c}>{c}</option>)}
                 </select>
               </div>
 

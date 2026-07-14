@@ -82,6 +82,8 @@ const Home: React.FC = () => {
             <option value="Furnitures">Furnitures</option>
             <option value="Freelance">Freelance</option>
             <option value="Construction">Construction</option>
+          
+            <option value="Industrial">Industrial</option>
           </select>
         </div>
       </div>
