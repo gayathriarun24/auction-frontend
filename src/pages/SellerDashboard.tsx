@@ -261,20 +261,20 @@ const SellerDashboard: React.FC = () => {
             <div className="flex gap-4">
 
               <div className="flex gap-4">
-                <button onClick={() => fetchBids(item._id)} className="text-[#B25C40] underline text-xs font-bold">View Bids</button>
+                <button onClick={() => fetchBids(item._id)} className="text-[#B25C40] underline text-xs font-bold cursor-pointer">View Bids</button>
 
                 {/* NEW CONDITIONAL LOGIC */}
                 {item.status === 'completed' ? (
                   <a
                     href={`/item/${item._id}`}
-                    className="px-4 py-2 rounded-xl text-xs font-bold text-[#616657] shadow-[4px_4px_8px_#a8a9ab,-4px_-4px_8px_#fafffd]"
+                    className="px-4 py-2 rounded-xl text-xs font-bold text-[#616657] cursor-pointer shadow-[4px_4px_8px_#a8a9ab,-4px_-4px_8px_#fafffd]"
                   >
                     View
                   </a>
                 ) : (
                   <button
                     onClick={() => handleEditClick(item)}
-                    className="px-4 py-2 rounded-xl text-xs font-bold text-[#616657] shadow-[4px_4px_8px_#a8a9ab,-4px_-4px_8px_#fafffd]"
+                    className="px-4 py-2 rounded-xl text-xs font-bold text-[#616657] cursor-pointer shadow-[4px_4px_8px_#a8a9ab,-4px_-4px_8px_#fafffd]"
                   >
                     Edit
                   </button>
@@ -283,7 +283,7 @@ const SellerDashboard: React.FC = () => {
                 <button onClick={() => handleDeleteAuction(item._id)} className="px-4 py-2 rounded-xl text-xs font-bold text-[#C19386] shadow-[4px_4px_8px_#a8a9ab,-4px_-4px_8px_#fafffd]">Remove</button>
 
                 {item.status === 'completed' ? (
-                  <span className="text-xs font-bold text-[#616657] px-4 py-2 rounded-xl shadow-[inset_3px_3px_6px_#a8a9ab,inset_-3px_-3px_6px_#fafffd]">
+                  <span className="text-xs font-bold text-[#616657] px-4 py-2 cursor-pointer rounded-xl shadow-[inset_3px_3px_6px_#a8a9ab,inset_-3px_-3px_6px_#fafffd]">
                     Winner: {item.currentHighestBidder?.name || 'Identified'}
                   </span>
                 ) : (
